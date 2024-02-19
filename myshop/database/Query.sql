@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS public.master_status (
 INSERT INTO public.master_status(status_name, description, status,  created_by)VALUES ('enable', 'Enable', 1,  'Admin');
 INSERT INTO public.master_status(status_name, description,  status,  created_by)VALUES ('disable', 'Disable', 1,  'Admin');
 --select * from master_status
-
+drop table master_state;
 CREATE TABLE IF NOT EXISTS public.master_state (
 	state_code character varying(30) COLLATE pg_catalog."default" NOT NULL,
 	state_name character varying(50) COLLATE pg_catalog."default",
